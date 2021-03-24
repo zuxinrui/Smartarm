@@ -1,0 +1,224 @@
+<?xml version="1.0" ?>
+<robot name="smartarm2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find smartarm2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find smartarm2_description)/urdf/smartarm2.trans" />
+<xacro:include filename="$(find smartarm2_description)/urdf/smartarm2.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.05152117545375974"/>
+    <mass value="14.266679098298306"/>
+    <inertia ixx="0.032389" ixy="0.0" ixz="0.0" iyy="0.032389" iyz="0.0" izz="0.039331"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.9372883507232943e-16 4.722418406369261e-16 0.10998317448147248"/>
+    <mass value="18.13312303531421"/>
+    <inertia ixx="0.100194" ixy="-0.0" ixz="0.0" iyy="0.142708" iyz="0.0" izz="0.068454"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.11"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.11"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03999999999999881 -9.40869594479693e-19 0.004237387962672645"/>
+    <mass value="5.380020889751709"/>
+    <inertia ixx="0.007487" ixy="0.0" ixz="0.0" iyy="0.006945" iyz="0.0" izz="0.006113"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.04 -0.0 -0.312543"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.04 -0.0 -0.312543"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.9372883507232943e-16 4.344979938152849e-16 0.10998326248904228"/>
+    <mass value="18.13312303531421"/>
+    <inertia ixx="0.100194" ixy="-0.0" ixz="0.0" iyy="0.142708" iyz="0.0" izz="0.068454"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.372543"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.372543"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03999999999999881 -6.017801544139795e-17 0.004237475970242377"/>
+    <mass value="5.380020889751709"/>
+    <inertia ixx="0.007487" ixy="0.0" ixz="0.0" iyy="0.006945" iyz="0.0" izz="0.006113"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.04 0.0 -0.575086"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.04 0.0 -0.575086"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.9372883507232943e-16 3.384578707412051e-16 0.1099833504966119"/>
+    <mass value="18.13312303531421"/>
+    <inertia ixx="0.100194" ixy="-0.0" ixz="0.0" iyy="0.142708" iyz="0.0" izz="0.068454"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.635086"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.635086"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link6_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03999999999999881 -1.7771143754075474e-16 0.004237563977812275"/>
+    <mass value="5.380020889751709"/>
+    <inertia ixx="0.007487" ixy="0.0" ixz="0.0" iyy="0.006945" iyz="0.0" izz="0.006113"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.04 0.0 -0.837629"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.04 0.0 -0.837629"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link7_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="5.365345361007138e-13 1.6860708278848998e-12 0.00900017548012022"/>
+    <mass value="0.6963175183067462"/>
+    <inertia ixx="0.000303" ixy="-0.0" ixz="0.0" iyy="0.000303" iyz="0.0" izz="0.000566"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.897629"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0 0.0 -0.897629"/>
+    <geometry>
+      <mesh filename="package://smartarm2_description/meshes/link7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="joint1" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.11"/>
+  <parent link="base_link"/>
+  <child link="link1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="joint2" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.04 0.0 0.202543"/>
+  <parent link="link1_1"/>
+  <child link="link2_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="joint3" type="continuous">
+  <origin rpy="0 0 0" xyz="0.04 -0.0 0.06"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="joint4" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.04 0.0 0.202543"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="joint5" type="continuous">
+  <origin rpy="0 0 0" xyz="0.04 0.0 0.06"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="joint6" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.04 0.0 0.202543"/>
+  <parent link="link5_1"/>
+  <child link="link6_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="joint7" type="continuous">
+  <origin rpy="0 0 0" xyz="0.04 0.0 0.06"/>
+  <parent link="link6_1"/>
+  <child link="link7_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+</robot>
