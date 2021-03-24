@@ -1,0 +1,14 @@
+controller_list:
+  - name: fake_smartarm2_controller
+    type: $(arg execution_type)
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+      - joint7
+initial:  # Define initial robot poses.
+  - group: smartarm2
+    pose: home
